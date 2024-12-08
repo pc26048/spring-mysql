@@ -58,7 +58,7 @@ pipeline {
         stage('Docker Compose Up') {
             steps {
                 echo 'Starting Docker containers using Docker Compose...'
-                bat 'docker-compose -f docker-compose.yml up -d'
+                bat 'docker-compose -f docker-compose.yaml up -d'
             }
         }
 
@@ -67,7 +67,7 @@ pipeline {
         stage('Docker Compose Down') {
             steps {
                 echo 'Shutting down Docker containers using Docker Compose...'
-                bat 'docker-compose -f docker-compose.yml down'
+                bat 'docker-compose -f docker-compose.yaml down'
             }
         }
     }
