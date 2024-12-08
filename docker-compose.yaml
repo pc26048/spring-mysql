@@ -12,7 +12,7 @@ services:
     environment:
       SPRING_APPLICATION_NAME: springboot-mysql
       SERVER_PORT: 9095
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/testdb10
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3307/testdb10
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: 123456
       SPRING_DATASOURCE_DRIVER_CLASS_NAME: com.mysql.cj.jdbc.Driver
@@ -25,7 +25,7 @@ services:
     image: mysql:8.0
     container_name: mysql_container
     ports:
-      - "3306:3306" # Expose MySQL on default port
+      - "3307:3306" # Expose MySQL on default port
     environment:
       MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: testdb10
